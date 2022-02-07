@@ -4,7 +4,7 @@ import classes from "./Modal.module.css";
 
 const Backdrop = (props) => <div className={classes.backdrop} />;
 
-const Modal = (props) => {
+const ModalOverlay = (props) => {
   return (
     <div className={classes.modal}>
       <div className={classes.content}>{props.children}</div>
