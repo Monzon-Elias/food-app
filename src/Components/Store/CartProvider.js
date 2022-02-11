@@ -32,8 +32,8 @@ const CartProvider = (props) => {
   const cartContext = {
     items: cartState.items,
     totalAmount: cartState.totalAmount,
-    addItem: addItemtoCartHandler,
-    removeItem: removeItemFromCartHandler,
+    addItem: addItemToCartHandler,
+    removeItem: removeItemToCartHandler,
   };
   return (
     <CartContext.Provider value={cartContext}>
@@ -41,3 +41,4 @@ const CartProvider = (props) => {
     </CartContext.Provider>
   );
 };
+export default CartProvider;
